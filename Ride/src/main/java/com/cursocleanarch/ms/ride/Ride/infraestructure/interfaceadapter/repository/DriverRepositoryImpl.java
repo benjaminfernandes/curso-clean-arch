@@ -1,6 +1,5 @@
 package com.cursocleanarch.ms.ride.Ride.infraestructure.interfaceadapter.repository;
 
-import com.cursocleanarch.ms.ride.Ride.application.repository.DriverRepository;
 import com.cursocleanarch.ms.ride.Ride.domain.driver.Driver;
 import com.cursocleanarch.ms.ride.Ride.infraestructure.interfaceadapter.datasources.DriverDataSourceLocal;
 

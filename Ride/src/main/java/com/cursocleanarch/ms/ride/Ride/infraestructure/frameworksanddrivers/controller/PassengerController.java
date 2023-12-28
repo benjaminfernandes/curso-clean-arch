@@ -1,8 +1,7 @@
 package com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers.controller;
 
-import com.cursocleanarch.ms.ride.Ride.application.dto.passenger.output.CreatePassengerOutput;
-import com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers.controller.dto.CreatePassengerInputController;
-import com.cursocleanarch.ms.ride.Ride.infraestructure.interfaceadapter.adapter.PassengerAdapter;
+import com.cursocleanarch.ms.ride.Ride.application.usecase.ProcessPayment;
+import com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers.controller.dto.InputPaymentGatewayDto;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,15 +10,15 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/passenger")
+@RequestMapping("/payment")
 public class PassengerController {
 
     @Autowired
-    private PassengerAdapter passengerAdapter;
+    private ProcessPayment processPayment;
 
     @PostMapping
-    public CreatePassengerOutput createPassenger(@RequestBody @Valid CreatePassengerInputController input) {
-        return passengerAdapter.createPassenger(input.convert());
+    public void processPayment(@RequestBody @Valid InputPaymentGatewayDto input) {
+        this.processPayment.execute(input.toModelUseCase());
     }
 
 }

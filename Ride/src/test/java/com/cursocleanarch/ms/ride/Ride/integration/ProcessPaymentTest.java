@@ -5,9 +5,9 @@ import com.cursocleanarch.ms.ride.Ride.application.dto.passenger.input.CreatePas
 import com.cursocleanarch.ms.ride.Ride.application.dto.ride.input.*;
 import com.cursocleanarch.ms.ride.Ride.application.dto.ride.request_ride.RequestRideInput;
 import com.cursocleanarch.ms.ride.Ride.application.factory.RepositoryFactory;
+import com.cursocleanarch.ms.ride.Ride.application.usecase.ProcessPayment;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.driver.CreateDriver;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.passenger.CreatePassenger;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.*;
 import com.cursocleanarch.ms.ride.Ride.domain.ride.status.Status;
 import com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers.datasources.DriverDataSourceLocalImpl;
 import com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers.datasources.PassengerDataSourceLocalImpl;
@@ -23,7 +23,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 import java.time.LocalDateTime;
 
 @SpringBootTest
-public class EndRideTest {
+public class ProcessPaymentTest {
 
     @Autowired
     private PassengerDataSourceLocalImpl passengerDataSourceLocal;
@@ -61,7 +61,7 @@ public class EndRideTest {
         startRide.execute(inputStartRide);
 
         var endRideInput = new EndRideInput(outputRequestRide.getRideId(), LocalDateTime.now());
-        var endRide = new EndRide(new RideRepositoryImpl(this.rideDataSourceLocal));
+        var endRide = new ProcessPayment(new RideRepositoryImpl(this.rideDataSourceLocal));
         endRide.execute(endRideInput);
 
         var getRideInput = new GetRideInput(outputRequestRide.getRideId());

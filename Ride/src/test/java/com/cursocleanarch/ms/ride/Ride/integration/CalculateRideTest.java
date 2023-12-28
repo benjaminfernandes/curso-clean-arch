@@ -2,7 +2,6 @@ package com.cursocleanarch.ms.ride.Ride.integration;
 
 import com.cursocleanarch.ms.ride.Ride.application.dto.ride.input.CalculateRideInput;
 import com.cursocleanarch.ms.ride.Ride.application.dto.ride.input.PositionInput;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.CalculateRide;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

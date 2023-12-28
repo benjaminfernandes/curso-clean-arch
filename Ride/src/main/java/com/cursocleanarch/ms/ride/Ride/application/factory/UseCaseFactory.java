@@ -4,9 +4,6 @@ import com.cursocleanarch.ms.ride.Ride.application.usecase.driver.CreateDriver;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.driver.GetDriver;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.passenger.CreatePassenger;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.passenger.GetPassenger;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.CalculateRide;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.GetRide;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.RequestRide;
 
 public class UseCaseFactory {
 

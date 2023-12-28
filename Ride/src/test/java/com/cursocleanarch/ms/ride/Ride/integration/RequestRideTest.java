@@ -6,8 +6,6 @@ import com.cursocleanarch.ms.ride.Ride.application.dto.ride.input.PositionInput;
 import com.cursocleanarch.ms.ride.Ride.application.dto.ride.request_ride.RequestRideInput;
 import com.cursocleanarch.ms.ride.Ride.application.factory.RepositoryFactory;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.passenger.CreatePassenger;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.GetRide;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.RequestRide;
 import com.cursocleanarch.ms.ride.Ride.domain.ride.status.Status;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;

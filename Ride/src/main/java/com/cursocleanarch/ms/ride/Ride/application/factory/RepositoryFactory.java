@@ -1,12 +1,8 @@
 package com.cursocleanarch.ms.ride.Ride.application.factory;
 
-import com.cursocleanarch.ms.ride.Ride.application.repository.DriverRepository;
-import com.cursocleanarch.ms.ride.Ride.application.repository.PassengerRepository;
-import com.cursocleanarch.ms.ride.Ride.application.repository.RideRepository;
+import com.cursocleanarch.ms.ride.Ride.application.repository.TransactionRepository;
 
 //Abstract factory
 public interface RepositoryFactory {
-    PassengerRepository createPassengerRepository();
-    DriverRepository createDriverRepository();
-    RideRepository createRideRepository();
+    public TransactionRepository transactionRepository();
 }

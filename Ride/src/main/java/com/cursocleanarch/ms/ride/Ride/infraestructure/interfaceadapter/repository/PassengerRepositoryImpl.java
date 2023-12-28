@@ -1,6 +1,5 @@
 package com.cursocleanarch.ms.ride.Ride.infraestructure.interfaceadapter.repository;
 
-import com.cursocleanarch.ms.ride.Ride.application.repository.PassengerRepository;
 import com.cursocleanarch.ms.ride.Ride.domain.passenger.Passenger;
 import com.cursocleanarch.ms.ride.Ride.infraestructure.interfaceadapter.datasources.PassengerDataSourceLocal;
 

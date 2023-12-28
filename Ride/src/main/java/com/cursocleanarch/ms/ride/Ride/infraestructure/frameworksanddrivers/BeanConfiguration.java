@@ -2,7 +2,6 @@ package com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers;
 
 import com.cursocleanarch.ms.ride.Ride.application.factory.RepositoryFactory;
 import com.cursocleanarch.ms.ride.Ride.application.factory.UseCaseFactory;
-import com.cursocleanarch.ms.ride.Ride.application.repository.PassengerRepository;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.passenger.CreatePassenger;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.passenger.GetPassenger;
 import com.cursocleanarch.ms.ride.Ride.infraestructure.factory.RepositoryFactoryImpl;

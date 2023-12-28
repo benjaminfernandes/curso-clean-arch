@@ -10,10 +10,6 @@ import com.cursocleanarch.ms.ride.Ride.application.dto.ride.request_ride.Request
 import com.cursocleanarch.ms.ride.Ride.application.factory.RepositoryFactory;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.driver.CreateDriver;
 import com.cursocleanarch.ms.ride.Ride.application.usecase.passenger.CreatePassenger;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.AcceptRide;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.GetRide;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.RequestRide;
-import com.cursocleanarch.ms.ride.Ride.application.usecase.ride.StartRide;
 import com.cursocleanarch.ms.ride.Ride.domain.ride.status.Status;
 import com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers.datasources.DriverDataSourceLocalImpl;
 import com.cursocleanarch.ms.ride.Ride.infraestructure.frameworksanddrivers.datasources.PassengerDataSourceLocalImpl;
